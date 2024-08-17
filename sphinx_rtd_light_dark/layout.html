@@ -14,11 +14,11 @@
     css_files method does *not require* pathto() but do not understand why
 -->
 {% block extrahead %}
-  <link rel="stylesheet" href="{{ pathto("_static/pygments/default.css", True) }}" type="text/css" id="pygments-style">
-  <link rel="stylesheet" href="{{ pathto("_static/light-dark.css", True) }}" type="text/css">
+  <link rel="stylesheet" href="{{ pathto('_static/pygments/default.css', True) }}" type="text/css" id="pygments-style">
+  <link rel="stylesheet" href="{{ pathto('_static/light-dark.css', True) }}" type="text/css">
   {{ super() }}
 {% endblock %}
 {% block document %}
-  <script type="text/javascript" src={{ pathto("_static/light-dark.js", True) }}></script>
+  <script type="text/javascript" src="{{ pathto('_static/light-dark.js', True) }}"></script>
   {{ super() }}
 {% endblock %}
